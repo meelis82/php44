@@ -3,7 +3,6 @@ class run {
 
   include run::php44
   include run::smtp
-  include run::drush
   include run::timezone
 
   if $crontab_1_expression and $crontab_1_command {
