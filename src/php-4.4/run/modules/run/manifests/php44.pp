@@ -24,12 +24,4 @@ class run::php44 {
   if $php_ini_xdebug == "On" {
     include run::php44::ini::xdebug
   }
-
-  if $php_ini_apcu == "On" {
-    include run::php44::ini::apcu
-  }
-
-  if $php_ini_apd == "On" {
-    include run::php44::ini::apd
-  }
 }
