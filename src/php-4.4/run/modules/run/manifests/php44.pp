@@ -20,8 +20,4 @@ class run::php44 {
   include run::php44::ini::expose_php
   include run::php44::ini::allow_url_fopen
   include run::php44::ini::zend
-
-  if $php_ini_xdebug == "On" {
-    include run::php44::ini::xdebug
-  }
 }
