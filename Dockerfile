@@ -1,6 +1,6 @@
 FROM dockerizedrupal/base-debian-wheezy:1.1.0
 
-MAINTAINER JÃ¼rgen Viljaste <j.viljaste@gmail.com>
+MAINTAINER Meelis Valgeväli <meelis82@gmail.com>
 
 LABEL vendor=dockerizedrupal.com
 
