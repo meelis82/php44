@@ -107,4 +107,11 @@ class build::php44 {
   bash_exec { 'rm -r /usr/local/src/phpfarm/src/php-4.4.9':
     require => Bash_exec['/usr/local/src/phpfarm/src/main.sh 4.4.9']
   }
+
+  file { '/usr/local/src/phpfarm/inst/current':
+    ensure => 'link',
+    target => '/usr/local/src/phpfarm/inst/php-4.4.9',
+    force => true,
+    require => Bash_exec['/usr/local/src/phpfarm/src/main.sh 4.4.9'],
+  }
 }
