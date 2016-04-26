@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-c	 
 
 case "${1}" in
   build)
