@@ -19,7 +19,8 @@ class build::php44::packages {
       'pkg-config',
       'libreadline-dev',
       'libltdl-dev',
-      'imagemagick'
+      'imagemagick',
+      'zip'
     ]:
     ensure => present
   }
