@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-if [ -z "${SERVER_NAME}" ]; then
-  SERVER_NAME="localhost"
+if [ -z "${POSTFIX_SERVER_NAME}" ]; then
+  POSTFIX_SERVER_NAME="localhost"
 fi
 
-export FACTER_SERVER_NAME="${SERVER_NAME}"
+export FACTER_POSTFIX_SERVER_NAME="${POSTFIX_SERVER_NAME}"
 
 if [ -z "${TIMEZONE}" ]; then
   TIMEZONE="Etc/UTC"
