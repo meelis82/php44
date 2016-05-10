@@ -34,4 +34,8 @@ class run {
     content => template('run/.bashrc.erb'),
     mode => 644
   }
+
+  if $php_ini_sendmail_from {
+    include run::sendmail_from
+  }
 }

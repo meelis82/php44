@@ -234,6 +234,10 @@ fi
 
 export FACTER_PHP_INI_MEMCACHED="${PHP_INI_MEMCACHED}"
 
+if [ -n "${PHP_INI_SENDMAIL_FROM}" ]; then
+	export FACTER_PHP_INI_SENDMAIL_FROM="${PHP_INI_SENDMAIL_FROM}"
+fi
+
 if [ -z "${PHP_INI_SENDMAIL_PATH}" ]; then
   PHP_INI_SENDMAIL_PATH="/usr/sbin/sendmail -t -i"
 fi
