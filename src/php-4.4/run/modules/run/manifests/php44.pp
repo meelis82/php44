@@ -11,6 +11,7 @@ class run::php44 {
   include run::php44::ini::post_max_size
   include run::php44::ini::upload_max_filesize
   include run::php44::ini::short_open_tag
+  include run::php44::ini::sendmail_path
   include run::php44::ini::max_execution_time
   include run::php44::ini::max_input_vars
   include run::php44::ini::memory_limit
