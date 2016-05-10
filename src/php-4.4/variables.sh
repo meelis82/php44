@@ -232,11 +232,13 @@ if [ -z "${PHP_INI_MEMCACHED}" ]; then
   PHP_INI_MEMCACHED="On"
 fi
 
+export FACTER_PHP_INI_MEMCACHED="${PHP_INI_MEMCACHED}"
+
 if [ -z "${PHP_INI_SENDMAIL_PATH}" ]; then
   PHP_INI_SENDMAIL_PATH="/usr/sbin/sendmail -t -i"
 fi
 
-export FACTER_PHP_INI_MEMCACHED="${PHP_INI_MEMCACHED}"
+export PHP_INI_SENDMAIL_PATH="${PHP_INI_SENDMAIL_PATH}"
 
 if [ -z "${PHP_INI_REDIS}" ]; then
   PHP_INI_REDIS="On"
