@@ -238,7 +238,7 @@ if [ -z "${PHP_INI_SENDMAIL_PATH}" ]; then
   PHP_INI_SENDMAIL_PATH="/usr/sbin/sendmail -t -i"
 fi
 
-export PHP_INI_SENDMAIL_PATH="${PHP_INI_SENDMAIL_PATH}"
+export FACTER_PHP_INI_SENDMAIL_PATH="${PHP_INI_SENDMAIL_PATH}"
 
 if [ -z "${PHP_INI_REDIS}" ]; then
   PHP_INI_REDIS="On"
