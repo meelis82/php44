@@ -19,12 +19,12 @@ class build::phppdf {
     require => File['/tmp/pdflib-2.1.10.tgz']
   }
 
-  bash_exec { 'cd /tmp/PDFlib-Lite-7.0.5p3 && ./configure':
+  bash_exec { 'cd /tmp/PDFlib-Lite-7.0.5p3 && ./configure --prefix=/usr':
     require => Bash_exec['cd /tmp && tar xzf PDFlib-Lite-7.0.5p3.tar.gz']
   }
 
   bash_exec { 'cd /tmp/PDFlib-Lite-7.0.5p3 && make && make install':
-    require => Bash_exec['cd /tmp/PDFlib-Lite-7.0.5p3 && ./configure']
+    require => Bash_exec['cd /tmp/PDFlib-Lite-7.0.5p3 && ./configure --prefix=/usr']
   }
 
   bash_exec { 'cd /tmp/pdflib-2.1.10 && /usr/local/src/phpfarm/inst/current/bin/phpize':
