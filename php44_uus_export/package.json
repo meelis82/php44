@@ -1,0 +1,13 @@
+{
+  "name": "docker-php-4.4-ubuntu",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meelis82/php44_uus.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-replace": "^0.11.0"
+  }
+}
